@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>MONDAY| Real Estate</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Real estate">
+	<meta name="keywords" content="real estate, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Favicon -->
+	<link href="imgs/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900%7cRoboto:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+ 
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/slicknav.min.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header Section -->
+	<header class="header-section">
+		<a href="index.html" class="site-logo">
+			<img src="imgs/logo.png" alt="logo">
+		</a>
+		<nav class="header-nav">
+			<ul class="main-menu">
+				<li><a href="index.html" th:href="@{/}" class="active">Home</a></li>
+				<li><a href="about-us.html">About</a></li>
+				<li><a href="#">Buy</a></li>
+				<li><a href="#">Pages</a>
+					<ul class="sub-menu">
+						<li><a href="about-us.html">About Us</a></li>
+						<li><a href="search-result.html">Search Result</a></li>
+						<li><a href="single-property.html">Property</a></li>
+					</ul>
+				</li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="header-right">
+				<div class="user-panel">
+					<a href="users/login-form.html" th:href="@{/users/login-form}" class="anchor" id="sign in">Sign in</a>
+					<a href="users/register" th:href="@{/users/register}" class="register">Join us</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Header Section end -->
+
+	<!-- Hero Section end -->
+	<section class="hero-section set-bg" data-setbg="imgs/hero-bg.jpg">
+		<div class="container">
+			<div class="hero-warp">
+				<form class="main-search-form">
+					<div class="search-type">
+						<div class="st-item">
+							<input type="radio" name="st" id="buy" checked>
+							<label for="buy">Buy</label>
+						</div>
+						<div class="st-item">
+							<input type="radio" name="st" id="rent">
+							<label for="rent">Rent</label>
+						</div>
+						<div class="st-item">
+							<input type="radio" name="st" id="sell">
+							<label for="sell">Sell</label>
+						</div>
+						<div class="st-item">
+							<input type="radio" name="st" id="property">
+							<label for="property">Property Value</label>
+						</div>
+						<div class="st-item">
+							<input type="radio" name="st" id="agents">
+							<label for="agents">Agents</label>
+						</div>                                                           
+					</div>
+					<div class="search-input">
+						<input type="text" placeholder="Search by state,Price,Area">
+						<button class="site-btn">Search</button>
+					</div>
+					<p>Welcome To MONDAY Real Estate Website Search , Here you can easly find your dreams house , You can buy , rent , sell and More</p>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- Hero Section end -->
+
+	<!-- Intro Section end -->
+	<section class="intro-section spad">
+		<div class="container">
+			<div class="section-title">
+				<h2>Sell Faster. Save Thousands.</h2>
+			</div>
+			<div class="row intro-first">
+				<div class="col-lg-6 order-lg-2">
+					<img src="imgs/about/1.jpg" alt="">
+				</div>
+				<div class="col-lg-6 order-lg-1">
+					<div class="about-text">
+						<h3>We charge 2% total. No hidden fees or upfront costs.</h3>
+						<p>Sometimes it scary to take a decision to deal with some real estate company due to the hidden fees
+						, with us we have a very clear stratgies our charge is only 2% of total price , no hidden fees , no more 
+						cost with any name , the question is How much does your wasted time and efforts costs?, we are 
+						really save your time and efforts we match you with your ideal property upon your requirements ,
+						we can send over the full property description and all images the make you see the full property 
+						even before you move one step , to see more about our stratgies ....</p>
+						<a href="#" class="readmore-btn">Find out more</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="imgs/about/2.jpg" alt="">
+				</div>
+				<div class="col-lg-6 ">
+					<div class="about-text">
+						<h3>How Much Can You Save? We work for you, not commission.</h3>
+						<p>if you think thats may cost you have to think about how much you save? from your time , your effort
+						   how it could be really upset to meet the unseriuse people , we save your time , money , and effort 
+						   by matching you with the right seller or buyer , our proffiental agents how are just work for satisfaction 
+						   not for your money , we bulid a huge organization , not save , don'h feel hesitate to contact us immediately  .</p>
+						<a href="#" class="readmore-btn">Find out more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Intro Section end -->
+
+	<!-- Property Section -->
+	<section class="property-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>Recently Add Homes</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="property-item">
+						<div class="pi-image">
+							<img src="imgs/property/1.jpg" alt="">
+							<div class="pi-badge new">New</div>
+						</div>
+						<h3>469,000EGP</h3>
+						<h5>3 Bedrooms Town house</h5>
+						<p>High class new house , with 3 bedrooms and big reciption with own garage and 3 bathrooms which fits to many 
+						uses , available for sale as home or company only.</p>
+						<a href="#" class="readmore-btn">Find out more</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="property-item">
+						<div class="pi-image">
+							<img src="imgs/property/2.jpg" alt="">
+							<div class="pi-badge offer">Offer</div>
+						</div>
+						<h3>369,000EGP</h3>
+						<h5>big House</h5>
+						<p>a great opportunity to such a house with very affordable price in the new cairo , availble for sale only , thats
+						conisdred as a good chance for youth to get that house.</p>
+						<a href="#" class="readmore-btn">Find out more</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="property-item">
+						<div class="pi-image">
+							<img src="imgs/property/3.jpg" alt="">
+							<div class="pi-badge new">New</div>
+						</div>
+						<h3>560,000EGP</h3>
+						<h5>5 bedrooms House</h5>
+						<p>a big house fits to big families how looking for living in high class town such madinty town , the house is very big area with 5
+						bedrooms , 3 bathrooms , 2 big reciptions , own garage and own big garden  .</p>
+						<a href="#" class="readmore-btn">Find out more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Property Section end -->
+
+	<!-- Loan Section end -->
+	<section class="loan-section">
+		<div class="loan-warp">
+			<div class="container">
+				<div class="section-title text-white">
+					<h2>See If You Qualify for a Mortgage</h2>
+					<p> you are looking for loan ? you don't buy in cash ?
+					it easy we can calculate your affordability for buying your dreams house , you just enter your total income 
+					and the amount you need , and well calculate it for you , it's all for free. </p>
+				</div>
+				<form class="loan-form">
+					<input type="text" placeholder="Your income">
+					<input type="text" placeholder="Amount needed">
+					<button class="site-btn">Submit</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- Loan Section end -->
+
+	<!-- Stories Section end -->
+	<section class="stories-section spad">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-5 order-lg-2">
+					<img class="w-100" src="imgs/about/3.jpg" alt="">
+				</div>
+				<div class="col-lg-7 order-lg-1">
+					<div class="about-text">
+						<h2>Seller Success Stories</h2>
+						<p> my name is Nabila Shaker <br> I have an appartment in shik zaid town i was looking for sell it to by a new villa in 5th statment 
+						i waste a lot of time time and effort with contact to wrong people , sometimes i was left my work to meet some or leave my new baby alone 
+						all of that just to buy this appartment , until one of my friends tells me about monday , they were a proffienal people , it coast only 15 minutes 
+						ang they get the mession , after aonly 10 days they get the man who buy it with a very good price , they amazing 
+						, i was happy with them  </p>
+						<a href="#" class="readmore-btn">Find out more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Stories Section end -->
+
+	<!-- Footer Section -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row text-white">
+				<div class="col-lg-4">
+					<div class="footer-widger">
+						<div class="about-widget">
+							<div class="aw-text">
+								<img src="imgs/footer-logo.png" alt="">
+								<p>we are still looking for the talents and ambtious people , if you are qualified enough 
+								and have the talent don't hesitate to send your resume . </p>
+								<a href="#" class="site-btn">we are hiring</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-6">
+					<div class="footer-widger">
+						<h2>Company</h2>
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Clients</a></li>
+							<li><a href="#">Testimonials</a></li>
+							<li><a href="#">Carrers</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-6">
+					<div class="footer-widger">
+						<h2>For Buyers</h2>
+						<ul>
+							<li><a href="#">Buy with us</a></li>
+							<li><a href="#">Papers</a></li>
+							<li><a href="#">Clients</a></li>
+							<li><a href="#">Testimonials</a></li>
+							<li><a href="#">Homes</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-6">
+					<div class="footer-widger">
+						<h2>For Sellers</h2>
+						<ul>
+							<li><a href="#">Seel With us</a></li>
+							<li><a href="#">What do You Need</a></li>
+							<li><a href="#">Clients</a></li>
+							<li><a href="#">Testimonials</a></li>
+							<li><a href="#">Guideline</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-6">
+					<div class="footer-widger">
+						<h2>For Renters</h2>
+						<ul>
+							<li><a href="#">Rent with us</a></li>
+							<li><a href="#">Guidelines</a></li>
+							<li><a href="#">Apartments</a></li>
+							<li><a href="#">Flats</a></li>
+							<li><a href="#">Houses</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</footer>
+	<!-- Footer Section end -->
+	
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+</html>

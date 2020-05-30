@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" >
+ <title>DotSay</title>
+</head>
+<body>
+
+<h1>Welcome To DoSay Users Page</h1>
+<br>
+<div class="container">
+
+ <table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+     <tr>
+      <td> Num.</td>
+      <td>First Name</td>
+      <td>Last name</td>
+      <td>Email</td>
+      <td>password</td>
+    </tr>
+   </thead>
+   <tbody>
+   <tr th:each="users : ${user}">
+   <td th:text=${users.id}/>
+   <td th:text=${users.firstName}/>
+   <td th:text=${users.lastName}/>
+   <td th:text=${users.email}/>
+   <td th:text=${users.password}/>
+   </tr>
+   
+  
+  </tbody>
+</table>
+</div>
+</body>
+</html>
